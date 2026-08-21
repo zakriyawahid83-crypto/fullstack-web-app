@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaDev | Professional Web Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">Nova<span>Dev</span></a>
+
+        <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="tag">FULL-STACK WEB DEVELOPMENT</p>
+
+                <h1>
+                    Building <span>Digital Experiences</span>
+                    That Stand Out.
+                </h1>
+
+                <p class="hero-text">
+                    Modern, responsive and high-performance websites
+                    built with clean frontend and powerful backend technology.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="code-window">
+                    <div class="window-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="code">
+                        <p><span class="purple">const</span> developer = {</p>
+                        <p>&nbsp;&nbsp;name: <span class="green">"NovaDev"</span>,</p>
+                        <p>&nbsp;&nbsp;skills: [</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"HTML"</span>,</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"CSS"</span>,</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"JavaScript"</span>,</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"FastAPI"</span></p>
+                        <p>&nbsp;&nbsp;]</p>
+                        <p>};</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <p class="section-label">ABOUT ME</p>
+            <h2>Turning Ideas Into <span>Real Products</span></h2>
+
+            <div class="about-grid">
+                <div>
+                    <p>
+                        I create modern web applications focused on performance,
+                        usability and clean architecture.
+                    </p>
+                    <p>
+                        My workflow combines a responsive frontend with a reliable
+                        Python backend to create complete digital experiences.
+                    </p>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <strong>10+</strong>
+                        <span>Projects</span>
+                    </div>
+                    <div class="stat">
+                        <strong>5+</strong>
+                        <span>Technologies</span>
+                    </div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Responsive</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="services">
+            <p class="section-label">WHAT I DO</p>
+            <h2>My <span>Services</span></h2>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="icon">01</div>
+                    <h3>Frontend Development</h3>
+                    <p>
+                        Responsive and interactive interfaces using HTML,
+                        CSS and JavaScript.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">02</div>
+                    <h3>Backend Development</h3>
+                    <p>
+                        Fast and structured APIs using Python and FastAPI.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">03</div>
+                    <h3>API Integration</h3>
+                    <p>
+                        Connecting frontend applications with reliable backend APIs.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <p class="section-label">MY WORK</p>
+            <h2>Featured <span>Projects</span></h2>
+
+            <div class="projects">
+
+                <article class="project">
+                    <div class="project-number">01</div>
+                    <h3>Job Application Tracker</h3>
+                    <p>
+                        A professional application management interface
+                        with frontend and backend architecture.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>FastAPI</span>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-number">02</div>
+                    <h3>Authentication System</h3>
+                    <p>
+                        Login and registration workflow connected
+                        with a Python backend.
+                    </p>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-number">03</div>
+                    <h3>Developer Portfolio</h3>
+                    <p>
+                        Animated portfolio website designed to showcase
+                        development skills and projects.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <p class="section-label">GET IN TOUCH</p>
+            <h2>Let's Build Something <span>Great</span></h2>
+
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button class="btn primary" type="submit">Send Message</button>
+            </form>
+
+            <p id="formMessage"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 NovaDev. Built with HTML, CSS, JavaScript & FastAPI.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
