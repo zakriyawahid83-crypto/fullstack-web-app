@@ -1,12 +1,31 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+
+from auth import LoginRequest, authenticate_user
 
 app = FastAPI(
     title="NovaDev API",
     description="Backend API for NovaDev professional website",
     version="1.0.0"
 )
+
+@app.post("/login")
+def login(data: LoginRequest):
+
+    if authenticate_user(data.email, data.password):
+
+        return {
+            "success": True,
+            "message": "Login successful!"
+        }
+
+    raise HTTPException(
+        status_code=401,
+        detail="Invalid email or password"
+    )
 
 app.add_middleware(
     CORSMiddleware,
